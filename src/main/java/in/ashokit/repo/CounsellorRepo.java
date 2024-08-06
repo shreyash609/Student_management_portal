@@ -14,4 +14,6 @@ public interface CounsellorRepo extends JpaRepository<Counsellor,Integer>{
 	@Query("from Counsellor where email=:email AND pwd=:password")
 	public Counsellor loginCheck(String email,String password);
 	
+
+	
 }

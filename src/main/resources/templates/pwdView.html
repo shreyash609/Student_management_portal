@@ -13,30 +13,22 @@
 
 <div class="container">
 
-   
-	<h1>Counsellor Login</h1>
-	
-	<p th:text="${sucess}" style="color: forestgreen;"></p>
-	<p th:text="${notSucess}" style="color: red;"></p>
+	<h1>Forgot Password Page</h1>
 	
 	<table>
-		<form th:action="@{/login}" th:object="${counsellor}" method="post">
+		<form th:action="@{/forgotpwd}">
 			<tr>
-				<td>Email</td>
-				<td><input type="email"  th:field="*{email}"></td>
-			</tr>
-			<tr>
-				<td>pwd</td>
-				<td><input type="password"  th:field="*{pwd}"></td>
+				<td>Enter your email</td>
+				<td><input type="email" name="email"></td>
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" value="login" class="btn btn-primary"></td>
+				<td><input type="submit" ></td>
 			</tr>
 		</form>
 	</table>
-    <a href="reg">Register here</a>
-    <a href="pwdView">Forgot Password</a>
+	
+	</table>
 	
 </div>
 
